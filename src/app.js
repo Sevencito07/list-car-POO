@@ -64,11 +64,11 @@ document.getElementById('conten-form')
 
     const car = new Car(name, price, year)
     const ui = new UI()
-    //if(name ==='' || price==='' || year===''){
-    //   return message('empty space xxx', 'error')
-    //}
+    if(name ==='' || price==='' || year===''){
+       return message('empty space xxx', 'error')
+    }
     ui.addCar(car)
-   /// ui.resetForm()
+    ui.resetForm()
     message('adding product..')
 
 
